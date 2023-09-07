@@ -278,6 +278,13 @@ p {
     height: 120px;
 }
 
+.icons-detail{
+    fill: currentColor;
+    width: 70px;
+    height: 70px;
+    fill: none;
+}
+
 .list-desc {
     margin-right: 30px;
     align-items: flex-end;
