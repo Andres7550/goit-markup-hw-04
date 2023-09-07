@@ -117,10 +117,6 @@ p {
     letter-spacing: 0.78px;
 }
 
-.hidden-button{
-    visibility: hidden;
-}
-
 .link-active {
     color: rgb(33, 150, 243, 1);
 }
