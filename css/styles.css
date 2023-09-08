@@ -6,6 +6,8 @@
     --bkg-footer: rgba(47, 48, 58, 1);
     --bkg-equip: rgba(245, 244, 250, 1);
     --bkg-tarjet-icon: rgba(245, 244, 250, 1);
+    --bkg-icons-social: rgba(245, 244, 250, 1);
+    --bkg-line:(rgba(236, 236, 236, 1));
 }
 
 a{
@@ -34,6 +36,11 @@ h2{
     padding: 0px;
 }
 
+hr {
+    margin: 0px;
+    padding: 0px;
+}
+
 ul{
     margin: 0px;
     padding: 0px;
@@ -49,9 +56,22 @@ p {
     padding: 0px;
 }
 
+svg{
+    fill: rgba(175, 177, 184, 1);
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+.icons-social{
+    width: 20px;
+    height: 20px;
+}
+
+.icons-social:hover{
+    fill: var(--bkg-icons-social);
 }
 
 /*ESTILOS HEADER*/
@@ -74,13 +94,15 @@ p {
 
 .header-nav ul{
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
+    margin-right: auto;
 }
 
 .header-nav ul li {
     margin: 30px;
+}
+
+.header-list-item-studio{
+    margin-right: auto;
 }
 
 .header-list-item {
@@ -91,6 +113,7 @@ p {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    margin-left: auto;
 }
 
 .header-list-item:hover {
@@ -115,6 +138,15 @@ p {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
+}
+
+.contact-header{
+    margin: auto;
+    margin-right: 0%;
+}
+
+.contact-header a{
+    margin-left: 30px;
 }
 
 .link-active {
@@ -211,6 +243,11 @@ p {
 
 /*ESTILOS BODY PAGINA PRINCIPAL*/
 
+.line-main{
+    height: 1px;
+    border-top: 0;
+}
+
 .section-solutions {
     background-color: var(--bkg-section-solutions);
     height: 600px;
@@ -282,7 +319,6 @@ p {
     fill: currentColor;
     width: 70px;
     height: 70px;
-    fill: none;
 }
 
 .list-desc {
@@ -476,6 +512,12 @@ p {
     padding: 8.7px 10.564px 3.503px 11px;
     justify-content: center;
     align-items: center;
+}
+
+.icons-regular{
+    width: 106px;
+    height: 53px;
+    fill: currentColor;
 }
 
 .equip-regular-logo{
