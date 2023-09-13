@@ -7,15 +7,16 @@
     --bkg-equip: rgba(245, 244, 250, 1);
     --bkg-tarjet-icon: rgba(245, 244, 250, 1);
     --bkg-icons-social: rgba(245, 244, 250, 1);
-    --bkg-line:(rgba(236, 236, 236, 1));
+    --bkg-line: (rgba(236, 236, 236, 1));
+    --bkg-icon-regular: (rgba(33, 150, 243, 1));
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--link-color);
 }
 
-ul{
+ul {
     padding: 0px;
     margin: 0px;
     list-style-type: none;
@@ -26,12 +27,12 @@ body {
     font-family: 'Roboto', 'Raleway', sans-serif;
 }
 
-h1{
+h1 {
     margin: 0px;
     padding: 0px;
 }
 
-h2{
+h2 {
     margin: 0px;
     padding: 0px;
 }
@@ -41,12 +42,12 @@ hr {
     padding: 0px;
 }
 
-ul{
+ul {
     margin: 0px;
     padding: 0px;
 }
 
-h3{
+h3 {
     margin: 0px;
     padding: 0px;
 }
@@ -56,8 +57,8 @@ p {
     padding: 0px;
 }
 
-svg{
-    fill: rgba(175, 177, 184, 1);
+svg {
+    fill: currentColor;
 }
 
 .container {
@@ -65,34 +66,34 @@ svg{
     margin: 0 auto;
 }
 
-.icons-social{
+.icons-social {
     width: 20px;
     height: 20px;
 }
 
-.icons-social:hover{
+.icons-social:hover {
     fill: var(--bkg-icons-social);
 }
 
 /*ESTILOS HEADER*/
 
-.main-header{
+.main-header {
     /*background-color: aqua;*/
     height: 80px;
 }
 
-.header-nav{
+.header-nav {
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.space{
+.space {
     margin-right: 10px;
 }
 
-.header-nav ul{
+.header-nav ul {
     display: flex;
     margin-right: auto;
 }
@@ -101,7 +102,7 @@ svg{
     margin: 30px;
 }
 
-.header-list-item-studio{
+.header-list-item-studio {
     margin-right: auto;
 }
 
@@ -114,6 +115,8 @@ svg{
     line-height: normal;
     letter-spacing: 0.28px;
     margin-left: auto;
+    display: flex;
+    gap: 10px;
 }
 
 .header-list-item:hover {
@@ -140,12 +143,17 @@ svg{
     letter-spacing: 0.78px;
 }
 
-.contact-header{
+.contact-header {
     margin: auto;
     margin-right: 0%;
+    display: flex;
 }
 
-.contact-header a{
+.contact-header-text {
+    color: rgba(117, 117, 117, 1);
+}
+
+.contact-header a {
     margin-left: 30px;
 }
 
@@ -155,13 +163,13 @@ svg{
 
 /*ESTILOS FOOTER*/
 
-.footer-section{
+.footer-section {
     background-color: var(--bkg-footer);
     height: 252px;
 }
 
 .footer-links {
-    color: rgba(255, 255, 255, 1);  
+    color: rgba(255, 255, 255, 1);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -176,7 +184,7 @@ svg{
     font-weight: bold;
 }
 
-.footer-list{
+.footer-list {
     padding-top: 60px;
 }
 
@@ -190,17 +198,17 @@ svg{
     letter-spacing: 0.78px;
 }
 
-.order-footer{
+.order-footer {
     display: flex;
     justify-content: flex-start;
 }
 
-.footer-list-contact{
+.footer-list-contact {
     padding-top: 60px;
     margin-left: 90px;
 }
 
-.container-icons-footer{
+.container-icons-footer {
     padding-right: 32px;
     padding-top: 16px;
     margin: 0 auto;
@@ -211,7 +219,7 @@ svg{
     justify-content: space-between;
 }
 
-.footer-phara{
+.footer-phara {
     color: #FFF;
     font-family: Roboto;
     font-size: 14px;
@@ -229,21 +237,23 @@ svg{
 }
 
 .icon-tam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     width: 44px;
     height: 44px;
+    color: #afb1b8;
 }
 
 .icon-tam:hover {
     background-color: rgba(33, 150, 243, 1);
     border-radius: 50%;
-    width: 44px;
-    height: 44px;
 }
 
 /*ESTILOS BODY PAGINA PRINCIPAL*/
 
-.line-main{
+.line-main {
     height: 1px;
     border-top: 0;
 }
@@ -251,13 +261,13 @@ svg{
 .section-solutions {
     background-color: var(--bkg-section-solutions);
     height: 600px;
-    background-image: url(../images/reunion.jpg);
+    background-image: linear-gradient(to bottom, #2F303A66, #2F303A66), url(../images/reunion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.tittle-main{
+.tittle-main {
     padding-top: 200px;
     color: #FFF;
     text-align: center;
@@ -270,12 +280,12 @@ svg{
     text-transform: uppercase;
 }
 
-.btn-center{
+.btn-center {
     display: flex;
     justify-content: center;
 }
 
-.button-main{
+.button-main {
     padding: 10px 32px;
     margin-top: 30px;
     border-radius: 4px;
@@ -283,7 +293,7 @@ svg{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.button-main:hover{
+.button-main:hover {
     color: var(--link-color);
     background-color: rgb(255, 255, 255);
     font-weight: bold;
@@ -296,7 +306,7 @@ svg{
     height: 431px;
 }
 
-.description-solution{
+.description-solution {
     display: flex;
 }
 
@@ -315,7 +325,7 @@ svg{
     height: 120px;
 }
 
-.icons-detail{
+.icons-detail {
     fill: currentColor;
     width: 70px;
     height: 70px;
@@ -328,7 +338,7 @@ svg{
     margin-top: 30px;
 }
 
-.tittle-desc{
+.tittle-desc {
     color: #212121;
     width: 270px;
     font-family: Roboto;
@@ -340,7 +350,7 @@ svg{
     text-transform: uppercase;
 }
 
-.text-desc{
+.text-desc {
     color: #757575;
     width: 270px;
     font-family: Roboto;
@@ -359,7 +369,7 @@ svg{
     height: 519px;
 }
 
-.tittle-dedic{
+.tittle-dedic {
     color: #212121;
     text-align: center;
     font-family: Roboto;
@@ -370,7 +380,7 @@ svg{
     letter-spacing: 1.08px;
 }
 
-.images-dedic{
+.images-dedic {
     display: flex;
     justify-content: space-between;
     margin-top: 55px;
@@ -384,12 +394,12 @@ svg{
     height: 708px;
 }
 
-.images-equip{
+.images-equip {
     display: flex;
     justify-content: space-between;
 }
 
-.tittle-equip{
+.tittle-equip {
     color: #212121;
     text-align: center;
     font-family: Roboto;
@@ -401,7 +411,7 @@ svg{
     padding-top: 94px;
 }
 
-.equip-card{
+.equip-card {
     width: 270px;
     height: 428px;
     margin-top: 72px;
@@ -410,7 +420,7 @@ svg{
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.member-name{
+.member-name {
     margin-top: 30px;
     color: #212121;
     text-align: center;
@@ -422,7 +432,7 @@ svg{
     letter-spacing: 0.48px;
 }
 
-.member-profession{
+.member-profession {
     color: #757575;
     text-align: center;
     font-family: Roboto;
@@ -433,7 +443,7 @@ svg{
     letter-spacing: 0.48px;
 }
 
-.images-equip-tam{
+.images-equip-tam {
     width: 270px;
     height: 260px;
 }
@@ -445,16 +455,16 @@ svg{
     margin: 0 auto;
 }
 
-.icons-equip{
+.icons-equip {
     display: flex;
     justify-content: space-between;
 }
 
-.space-icon-equip{
+.space-icon-equip {
     padding: 12px;
 }
 
-.icon-tam{
+.icon-tam {
     /*background-color: #2196F3;*/
     border-radius: 50%;
     width: 44px;
@@ -472,7 +482,7 @@ svg{
 
 /*ESTILOS CLIENTES REGULARES*/
 
-.regular-clients{
+.regular-clients {
     /*background-color: orangered;*/
     height: 372px;
 }
@@ -504,9 +514,18 @@ svg{
     padding-bottom: 14px;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
+    color: rgba(175, 177, 184, 1);
 }
 
-.icon-regular{
+.equip-regular:hover{
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.equip-regular svg:hover{
+    fill: rgba(33, 150, 243, 1);
+}
+
+.icon-regular {
     display: flex;
     width: 106px;
     padding: 8.7px 10.564px 3.503px 11px;
@@ -514,13 +533,7 @@ svg{
     align-items: center;
 }
 
-.icons-regular{
-    width: 106px;
-    height: 53px;
-    fill: currentColor;
-}
-
-.equip-regular-logo{
+.equip-regular-logo {
     background-image: url(../images/Logo.png);
     width: 106px;
     height: 53px;
@@ -529,12 +542,12 @@ svg{
 
 /*BODY MAIN PORTAFOLIO*/
 
-.section-button{
+.section-button {
     /*background-color: #212121;*/
     height: 1548px;
 }
 
-.body-porta{
+.body-porta {
     padding-top: 30px;
 }
 
@@ -564,8 +577,8 @@ svg{
 }
 
 .btn-all-active {
+    background-color: rgba(33, 150, 243, 1);
     color: rgb(255, 255, 255);
-    background-color: rgb(51, 63, 236);
     font-weight: bold;
 }
 
@@ -592,7 +605,7 @@ svg{
     margin-left: 24px;
 }
 
-.card-briefcase{
+.card-briefcase {
     margin-top: 15px;
     width: 370px;
     height: 404px;
